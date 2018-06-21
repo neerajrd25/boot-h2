@@ -7,15 +7,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import lombok.Data;
-
 @Data
 @Entity
 @Table(name="todo")
+@EqualsAndHashCode(callSuper=false)
 @JsonIgnoreProperties(value = { "createdAt" }, allowGetters = true)
 @EntityListeners(AuditingEntityListener.class)
 public class Todo extends Base {
