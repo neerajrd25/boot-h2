@@ -8,7 +8,7 @@ import lombok.Getter;
 public class CacheObject {
 
 	@Getter
-	private Object value;
+	private String value;
 	private long expiryTime;
 
 	boolean isExpired() {

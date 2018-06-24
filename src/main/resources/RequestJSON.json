@@ -1,0 +1,82 @@
+/*
+  EndPoint - http://localhost:8080/cache
+  Method - POST
+  Payload - {
+              "key": "name",
+              "value": "Pankaj"
+            }
+*/
+
+
+/*
+  EndPoint - http://localhost:8080/cache/name
+  Method - GET
+  Payload - Not Needed
+*/
+
+
+/*
+  EndPoint - http://localhost:8080/cache
+  Method - PUT
+  Payload - {
+              "key" : "name",
+              "value": "Pankaj Saboo"
+            }
+*/
+
+
+/*
+  EndPoint - http://localhost:8080/cache/all
+  Method - POST
+  Payload - [
+              {
+                "key" : "city",
+                "value" : "Pune"
+              },
+              {
+                "key" : "education",
+                "value" : "MCA"
+              },
+              {
+                "key" : "hobbies",
+                "value" : ["Reading","Trekking","Travelling"]
+              }
+            ]
+*/
+
+
+/*
+  EndPoint - http://localhost:8080/cache
+  Method - GET
+  Payload - Not required any extra parameter
+*/
+
+/*
+  EndPoint - http://localhost:8080/cache/all
+  Method - PUT
+  Payload - [
+              {
+                "key" : "city",
+                "value" : "Jintur"
+              },
+              {
+                "key" : "education",
+                "value" : "BCS"
+              }
+
+            ]
+*/
+
+
+/*
+  EndPoint - http://localhost:8080/cache/education
+  Method - DELETE
+  Payload - Not required any extra parameter
+*/
+
+/*
+  EndPoint - http://localhost:8080/cache
+  Method - DELETE
+  payload - ["city","name"]
+*/
+
